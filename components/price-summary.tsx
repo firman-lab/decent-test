@@ -1,9 +1,9 @@
 'use client';
 
 import { motion, AnimatePresence } from 'framer-motion';
-import { Sparkles, TrendingUp, Sofa } from 'lucide-react';
 import { useWorkspaceStore } from '@/store/workspace-store';
 import { Button } from './ui/button';
+import { Sofa, TrendingUp } from 'lucide-react';
 
 interface PriceSummaryProps {
   onRentClick: () => void;

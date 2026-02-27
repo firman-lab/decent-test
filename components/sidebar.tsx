@@ -141,9 +141,9 @@ export function Sidebar() {
 
       <div className="p-4 border-t border-zinc-200 bg-white">
         <div className="text-xs text-zinc-500 space-y-1">
-          <p>💡 <span className="font-medium">Tip:</span> Click items to add them</p>
-          <p>🖱️ <span className="font-medium">Drag:</span> Move items around</p>
-          <p>📐 <span className="font-medium">Resize:</span> Drag corners/edges</p>
+          <p><span className="font-medium">Tip:</span> Click items to add them</p>
+          <p><span className="font-medium">Drag:</span> Move items around</p>
+          <p><span className="font-medium">Resize:</span> Drag corners/edges</p>
         </div>
       </div>
     </div>

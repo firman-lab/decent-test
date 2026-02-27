@@ -121,7 +121,6 @@ export function WorkspaceCanvas() {
           className="absolute inset-0 flex items-center justify-center pointer-events-none"
         >
           <div className="text-center bg-white/80 backdrop-blur-sm px-8 py-6 rounded-2xl shadow-xl border border-zinc-200 max-w-md">
-            <div className="text-5xl mb-3">✨</div>
             <h4 className="text-lg font-bold text-zinc-900 mb-2">
               Add Items to Your Desk
             </h4>
