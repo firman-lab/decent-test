@@ -36,7 +36,6 @@ export function WorkspaceCanvas() {
           transition={{ duration: 0.3 }}
           className="text-center max-w-md px-8"
         >
-          <div className="text-8xl mb-4 opacity-20">🪑</div>
           <h3 className="text-2xl font-bold text-zinc-900 mb-2">
             Select a Desk to Start
           </h3>

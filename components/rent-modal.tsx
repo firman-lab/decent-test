@@ -24,7 +24,7 @@ export function RentModal({ open, onOpenChange }: RentModalProps) {
   const { monthly, quarterly } = getTotalPrice();
 
   const handleConfirmRental = () => {
-    console.log('🎉 Rental Confirmed!');
+    console.log('Rental Confirmed!');
     console.log('Desk:', selectedDesk?.name, '$', selectedDesk?.pricePerMonth);
     console.log('Items:', placedItems.map(item => ({
       name: item.product.name,
