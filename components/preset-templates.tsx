@@ -1,7 +1,6 @@
 'use client';
 
 import { motion } from 'framer-motion';
-import { Sparkles } from 'lucide-react';
 import { presetTemplates } from '@/data/products';
 import { useWorkspaceStore } from '@/store/workspace-store';
 import { Button } from './ui/button';
@@ -10,24 +9,24 @@ export function PresetTemplates() {
   const { loadPreset } = useWorkspaceStore();
 
   return (
-    <div className="space-y-4">
+    <div className="space-y-3 sm:space-y-4">
       <div className="flex items-center gap-2">
-        <h3 className="text-lg font-bold text-zinc-900">Quick Start Templates</h3>
+        <h3 className="text-base sm:text-lg font-bold text-zinc-900">Quick Start Templates</h3>
       </div>
       
-      <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+      <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 sm:gap-4">
         {presetTemplates.map((template, index) => (
           <motion.div
             key={template.id}
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: index * 0.1 }}
-            className="group relative bg-white rounded-xl border border-zinc-200 p-5 hover:shadow-lg transition-all cursor-pointer"
+            className="group relative bg-white rounded-xl border border-zinc-200 p-4 sm:p-5 hover:shadow-lg transition-all cursor-pointer"
             onClick={() => loadPreset(template.deskId, template.items)}
           >
-            <div className="space-y-3">
+            <div className="space-y-2 sm:space-y-3">
               <div>
-                <h4 className="font-semibold text-zinc-900 group-hover:text-blue-600 transition-colors">
+                <h4 className="text-sm sm:text-base font-semibold text-zinc-900 group-hover:text-blue-600 transition-colors">
                   {template.name}
                 </h4>
                 <p className="text-xs text-zinc-500 mt-1">
@@ -42,7 +41,7 @@ export function PresetTemplates() {
                 <Button
                   size="sm"
                   variant="ghost"
-                  className="text-blue-600 hover:text-blue-700 hover:bg-blue-50"
+                  className="text-blue-600 hover:text-blue-700 hover:bg-blue-50 text-xs sm:text-sm"
                   onClick={(e) => {
                     e.stopPropagation();
                     loadPreset(template.deskId, template.items);
